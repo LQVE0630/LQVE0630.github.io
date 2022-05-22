@@ -1,15 +1,119 @@
 <!DOCTYPE html>
+
+  
 <html>
-<head>
-<meta charset="UTF-8">
-<title>夏专属网站</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+            <title>夏专属网站</title>
+    </head>
+        <style>
+            body{background: url(C:\\壁纸\\1.jpg) no-repeat;background-size:cover; 
+            opacity:0.7;
+            filter:alpha(opacity=70);}
+        </style>
+            
+    
 <body>
-<p>
-<h1 style="text-align: center;">记录每天的生活</h1>
-</p>
-<p>
-<h2 style="color:aquamarine">因为有你，世界都美好</style></h2>
-</p>
+    <div id="meun" style="background-color:#a7e4ce;height:400px;width:300px;float:left;position: absolute;top: 100px;">
+        <style>
+#draw-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button {
+  border: 0;
+  background: none;
+  text-transform: uppercase;
+  color: #4361ee;
+  font-weight: bold;
+  position: relative;
+  outline: none;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+button::before, button::after {
+  box-sizing: inherit;
+  position: absolute;
+  content: '';
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+button::after {
+  bottom: 0;
+  right: 0;
+}
+
+button::before {
+  top: 0;
+  left: 0;
+}
+
+button:hover::before, button:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+button:hover::before {
+  border-top-color: #4361ee;
+  border-right-color: #4361ee;
+  transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
+}
+
+button:hover::after {
+  border-bottom-color: #4361ee;
+  border-left-color: #4361ee;
+  transition: border-color 0s ease-out 0.6s, width 0.3s ease-out 0.6s, height 0.3s ease-out 1s;
+}
+            p#login{
+                color: rgb(162, 80, 145);
+                position: absolute;
+                top: 50px;
+                left: 130px;
+                font-size:larger;
+                font-family: "幼圆";
+                }
+            p#password1
+            {
+                color: rgb(55, 195, 149);
+               position: absolute;
+               top: 150px;
+                left: 50px;
+                font-family: "幼圆";
+            }
+            p#count1
+            {
+                color: rgb(55, 195, 149);
+                position: absolute;
+                top: 110px;
+                left: 50px;
+                font-family: "幼圆";
+            }   
+            button#loginb
+            {
+                position: absolute;
+                top: 200px;
+                left: 130px;
+                color: aquamarine;
+                background-color: rgb(255, 255, 255);
+
+            }  
+        </style></b>
+        <style type="">
+            #password{width: 150px;position: absolute;}
+            #count{width: 150px;position: absolute;}
+        </style>
+
+            <p id="login">登录</p><br>
+            <p id="count1">账号：<input value="" id="count"></p>
+            <p id="password1">密码：<input value="" id="password"> </p>
+        <button id="loginb">登录</button>
+    </div>
 </body>
-<htnl>
+<html>
+    
