@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<!--两按键控制播放和暂停-->
+    <button onclick="playAid()" type="button">播放</button>
+    <button onclick="pauseAid()" type="button">暂停</button>
+    <audio id="audio"> <!--音频标签用source引入资源-->
+        <source src="https://annex.wenshushu.cn/file_attach/6r01viv/8/eg/8ego6r01viv/8ee3ddxk6af?cdn_sign=1653491827-31-0-4050891d2a35271329bd22935f1ebaeb&exp=1200&q-url-param-list=response-content-disposition%3Bresponse-content-type&response-content-type=audio%2Fmp3" type="audio/mp3">
+    </audio>
+    <!--JavaScript脚本-->
+    <script>
+        var myAudio=document.getElementById("audio"); 
+        function playAid(){
+            myAudio.play();
+        }
+        function pauseAid(){
+            myAudio.pause();
+        }
+    </script>
+</body>
+</html>
