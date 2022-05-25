@@ -1,0 +1,71 @@
+<HTML>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<HEAD>
+    <TITLE></TITLE>
+</HEAD>
+<BODY bgcolor="#fef4d2" background="2.jpg" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+    <br>
+    <br>
+    <center>
+        <font color="ffaafa">
+            <h2>
+                <font color="#FF0000">夏的小家</font>
+            </h2>
+        </font>
+        <hr width=300>
+        <br><br>
+        <script language=JavaScript>
+            function CheckPassword() {
+                if (document.form1.username.value == "" || document.form1.passwrd.value == "")
+                // <!-- [Step1]: 这里可以设置弹出窗口的警告信息 -->
+                {
+                    window.alert("账号密码呢？？交出来");
+                    document.form1.username.focus();
+                } else {
+                    // <!-- [Step2]: 在此能够更改用户名和密码 -->
+                    if (document.form1.username.value == "1" && document.form1.passwrd.value == "1") {
+                        window.alert(document.form1.username.value + " 大官人里边请");
+                        location.href="LQVE.html";
+                    } else {
+                        window.alert("没“名”还来咱这？")
+                    }
+                }
+            }
+        </script>
+        <form name="form1">
+            <table border=8 cellpadding=5 cellspacing=0>
+                <tr>
+                    <td colspan=2 align=center>
+                        <!-- [Step5]: 这里能够更改页面信息的大小 -->
+                        <!-- [Step6]: 在此可以设置页面信息的颜色 -->
+                        <!-- [Step7]: 这里能够更改页面显示的信息 -->
+                        <font size=3 color=#993366><b>请您输入</b></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font size=3 color=#993366><b>用户名:</b></font>
+                    </td>
+                    <td>
+                        <input type="text" name="username" value="" size=10>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font size=3 color=#993366><b>密&nbsp;&nbsp;码:</b></font>
+                    </td>
+                    <td>
+                        <input type="password" name="passwrd" value="" size=10>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=2 align=center>
+                        <input type="button" name="btn" value="登 录" onClick="CheckPassword();return false;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</BODY>
+
+</HTML>

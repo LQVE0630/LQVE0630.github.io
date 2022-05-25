@@ -1,119 +1,138 @@
 <!DOCTYPE html>
+<html lang="en">
 
-  
-<html>
-    <head>
-        <meta charset="UTF-8">
-            <title>夏专属网站</title>
-    </head>
-        <style>
-            body{background: url(https://www.keaidian.com/uploads/allimg/190424/24110307_8.jpg) no-repeat;background-size:cover; 
-            opacity:0.7;
-            filter:alpha(opacity=70);}
-        </style>
-            
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love xqq</title>
+</head>
+<style>
+    body {
+        background: url(https://www.keaidian.com/uploads/allimg/190424/24110307_8.jpg) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+        background-size: 100% 100%;
+    }
     
+    img#music {
+        border: 3px solid skyblue;
+        position: relative;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .arrow-bottom {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 12px solid #217AFF;
+        font-size: 0;
+        line-height: 0;
+        position: relative;
+        left: 140px;
+        /* 箭头图标 */
+    }
+</style>
+
 <body>
-    <div id="meun" style="background-color:#a7e4ce;height:400px;width:300px;float:left;position: absolute;top: 100px;">
-        <style>
-#draw-border {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-button {
-  border: 0;
-  background: none;
-  text-transform: uppercase;
-  color: #4361ee;
-  font-weight: bold;
-  position: relative;
-  outline: none;
-  padding: 10px 20px;
-  box-sizing: border-box;
-}
-
-button::before, button::after {
-  box-sizing: inherit;
-  position: absolute;
-  content: '';
-  border: 2px solid transparent;
-  width: 0;
-  height: 0;
-}
-
-button::after {
-  bottom: 0;
-  right: 0;
-}
-
-button::before {
-  top: 0;
-  left: 0;
-}
-
-button:hover::before, button:hover::after {
-  width: 100%;
-  height: 100%;
-}
-
-button:hover::before {
-  border-top-color: #4361ee;
-  border-right-color: #4361ee;
-  transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
-}
-
-button:hover::after {
-  border-bottom-color: #4361ee;
-  border-left-color: #4361ee;
-  transition: border-color 0s ease-out 0.6s, width 0.3s ease-out 0.6s, height 0.3s ease-out 1s;
-}
-            p#login{
-                color: rgb(162, 80, 145);
-                position: absolute;
-                top: 50px;
-                left: 130px;
-                font-size:larger;
-                font-family: "幼圆";
-                }
-            p#password1
-            {
-                color: rgb(55, 195, 149);
-               position: absolute;
-               top: 150px;
-                left: 50px;
-                font-family: "幼圆";
-            }
-            p#count1
-            {
-                color: rgb(55, 195, 149);
-                position: absolute;
-                top: 110px;
-                left: 50px;
-                font-family: "幼圆";
-            }   
-            button#loginb
-            {
-                position: absolute;
-                top: 200px;
-                left: 130px;
-                color: aquamarine;
-                background-color: rgb(255, 255, 255);
-
-            }  
-        </style></b>
-        <style type="">
-            #password{width: 150px;position: absolute;}
-            #count{width: 150px;position: absolute;}
-        </style>
-
-            <p id="login">登录</p><br>
-            <p id="count1">账号：<input value="" id="count"></p>
-            <p id="password1">密码：<input value="" id="password"> </p>
-        <button id="loginb">登录</button>
+    <!-- <audio autoplay="autoplay" loop="false" preload="auto" src="小匆匆 - 一生有你 (完整女版).mp3"> -->
+    <!-- </audio> -->
+    <!-- 背景音乐 -->
+    <h1 align="center" style="color: #f7a2d0;font-family: 'Courier New', Courier, monospace;">欢迎来到夏的专属网站 </h1>
+    <div id="meun" style="background-color:#ffb0e5;height:400px;width:300px;float:left;position: absolute;top: 100px;left: 50px;">
+        <h1 align="center" style="color: #66d2fd;font-family: 'Courier New', Courier, monospace;font-size:large;">点我听歌 </h1><br />
+        <p class="arrow-bottom"></p>
+        <a href="小匆匆 - 一生有你 (完整女版).mp3" target="_self"><img src="https://img.51miz.com/Element/00/22/02/77/7f64b1c1_E220277_4ba3a81b.png" width=50 id="music"></a>
     </div>
-</body>
-<html>
+    <!-- 第一个面板 -->
+    <div id="meun" style="background-color:#a7e4ce;height:400px;width:300px;float:left;position: absolute;top: 100px;left: 400px;">
+        <BODY bgcolor="#fef4d2" background="../images/background8.jpg" >
+            <br>
+            <br>
+            <center>
+            <font color="ffaafa">
+              <h2><font color="#FF0000">夏的歌</font></h2>
+              </font> 
+              <hr width=300>
+            <br>
+            <font face="Helvetica" size=2>请选择并播放音乐：</font>
+              <p align="center">
+               <font face="Helvetica" >
+                 <form>
+                   <select name=list>
+                      <option value=xiamusic./love is gone.flac selected>love is gone
+                      <option value=xiamusic./let me down.flac>let me down
+                      <option value=xiamusic./folwer.flac >花海
+                        <option value=xiamusic./love you.mp3>我喜欢
+                            <option value=xiamusic./oh.flac >氢化氧 
+                                <option value=xiamusic./summer wind.flac >夏天的风
+                                    <option value=xiamusic./no more.flac >normal no more
+                   </select>
+                   <input onclick=top.location.href=this.form.list.options[this.form.list.selectedIndex].value type=button value="播放"> 
+                 </form>
+               </font>
+              <p></p>
+    </div>
     
+    <!-- 第二个面板 -->
+    <div id="meun" style="background-color:#ccfc6c;height:400px;width:300px;float:left;position: absolute;top: 100px;left: 750px;">
+        <h2>游戏篇--测试点击速度</h2>
+        <hr width=300>
+        <script language=JavaScript>
+            // <!-- [Step1]: 这里可以更改多选框的个数 -->
+            var number = 8
+            var TotNum = 0
+            var index = false
+
+            function StartGame(form) {
+                TotNum = 0
+                index = false
+                for (var i = 1; i <= 64; ++i) {
+                    form.elements[i].checked = false
+                }
+            }
+
+            function TestSpeed(element) {
+                var now = new Date()
+                if (!index) {
+                    index = true
+                    startTime = now.getTime()
+                }
+                // <!-- [Step2]: 在此能够设置定时的时间 -->
+                if (now.getTime() - startTime > 10000) {
+                    element.checked = !element.checked
+                    return window.alert("测试时间已到！")
+                }
+                if (element.checked) TotNum++
+                    else TotNum--
+                        element.form.num.value = TotNum
+            }
+        </script>
+        <script language=JavaScript>
+            document.write("<form>")
+            document.write('已经选中：<input type="text" value="0" ');
+            document.write('name="num" size=2 onfocus="this.blur()"><br>')
+            document.write("<hr size=1 width=200>")
+            for (var i = 0; i < number; ++i) {
+                for (var j = 0; j < number; ++j) {
+                    document.write('<input type="checkbox" ');
+                    document.write('onclick="TestSpeed(this)">')
+                }
+                document.write("<br>")
+            }
+            document.write("<hr size=1 width=200>")
+            document.write('<input type="button" value="重新开始" ');
+            document.write('onclick="StartGame(this.form)">')
+            document.write("</form>")
+        </script>
+    </div>
+    <!-- 第三个面板 -->
+
+</body>
+
+</html>
