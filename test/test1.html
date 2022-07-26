@@ -1,0 +1,158 @@
+<style type="text/css">
+ 
+    body
+    {
+        font-family: "微软雅黑";
+        background-color: #000;
+    }
+
+    #gallery
+    {
+        width: auto;
+        height: auto;
+        position: relative;
+        margin: 20px auto 0;
+        background-color: #000;
+
+        padding: 20px;
+    }
+
+        /*标题*/
+    #gallery h1
+    {
+        color: rgb(255, 100, 188);
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    #gallery ul
+    {
+        width: 140px;
+        float: right;
+        margin: 10px 0 20px;
+    }
+
+    #gallery ul li
+    {
+        float: left;
+        margin: 20px 8px 0 0;
+    }
+
+    #gallery ul li span
+    {
+        display: block;
+        position: relative;
+        width: 60px;
+        height: 80px;
+        border: 1px solid #fff;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    #gallery  ul li span img
+    {
+        position: relative;
+        top: -200px;
+        left: -100px;
+        filter: alpha(opacity=30);
+        opacity: 0.3;
+    }
+
+    #gallery ul li span.touch img, #gallery ul li:hover span img
+    {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    #gallery ul li:hover div
+    {
+        display: block;
+    }
+
+    #gallery ul li div  img
+    {
+        width: 600px;
+        height: 350px;
+    }
+
+    #gallery ul li div
+    {
+        display: none;
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        border: 5px solid #fff;
+    }
+
+    .clearfix
+    {
+        clear: both;
+    }
+
+
+</style>
+<body>
+ 
+    <div id="gallery">
+        <h1>那些年的你</h1>
+        <ul>
+     
+            <li>
+                <span class="touch"><img src="1.jpg"/></span>
+     
+                <div style="display: block;">
+                    <img src="2.jpg"/>
+                </div>
+            </li>
+     
+            <li>
+                <span><img src="3.png"/></span>
+     
+                <div>
+                    <img src="3.png"/>
+                </div>
+            </li>
+            <li>
+                <span><img src="4.jpg"/></span>
+     
+                <div>
+                    <img src="4.jpg"/>
+                </div>
+            </li>
+     
+            <li>
+                <span><img src="5.jpg"/></span>
+     
+                <div>
+                    <img src="5.jpg"/>
+                </div>
+            </li>
+     
+            <li>
+                <span><img src="6.jpg"/></span>
+     
+                <div>
+                    <img src="6.jpg"/>
+                </div>
+            </li>
+
+
+            <!-- <li>
+                <span><img src="7.jpg"/></span>
+     
+                <div>
+                    <img src="7.jpg"/>
+                </div>
+            </li>需要增加图片复制并给予链接 -->
+     
+        </ul>
+     
+        <div class="clearfix"></div>
+    </div>
+     
+     
+    </body>
