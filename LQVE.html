@@ -1,34 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="ltr" style="width: 100%; height: 100%;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>love xqq</title>
     <link rel="icon" href="https://github.com/lqve0630/lqve0630.github.io/blob/main/1.ico">
-    
-    <style type="text/css">*{ cursor:url(https://github.com/lqve0630/lqve0630.github.io/blob/main/2.cur),auto;}</style>
+    <script language="JavaScript">
+        function startTime()   
+        {   
+            var today=new Date();//定义日期对象   
+            var yyyy = today.getFullYear();//通过日期对象的getFullYear()方法返回年    
+            var MM = today.getMonth()+1;//通过日期对象的getMonth()方法返回年    
+            var dd = today.getDate();//通过日期对象的getDate()方法返回年     
+            var hh=today.getHours();//通过日期对象的getHours方法返回小时   
+            var mm=today.getMinutes();//通过日期对象的getMinutes方法返回分钟   
+            var ss=today.getSeconds();//通过日期对象的getSeconds方法返回秒   
+            // 如果分钟或小时的值小于10，则在其值前加0，比如如果时间是下午3点20分9秒的话，则显示15：20：09   
+            MM=checkTime(MM);
+            dd=checkTime(dd);
+            mm=checkTime(mm);   
+            ss=checkTime(ss);    
+            document.getElementById('nowDateTimeSpan').innerHTML=yyyy+"-"+MM +"-"+ dd +" " + hh+":"+mm+":"+ss+"   " ;   
+            setTimeout('startTime()',1000);//每一秒中重新加载startTime()方法 
+        }   
+         
+        function checkTime(i)   
+        {   
+            if (i<10){
+                i="0" + i;
+            }   
+              return i;
+        }  
+    </script>
+     
 </head>
+
 <style>
     body {
-        background: url(https://seikim.com/i/2022/05/30/gz0tp0.jpg) no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        opacity: 0.7;
-        filter: alpha(opacity=70);
-        background-size: 100% 100%;
+        
+        margin: 0;
+          padding: 0;
+          font-family: "montserrat";
+          background-image: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
+          background-size: 400%;
+          animation: bganimation 15s infinite
+        
     }
     
     img#music {
-        border: 3px solid skyblue;
+        border: 3px solid skyblu   0e;
         position: relative;
         left: 50%;
         top: 10%;
         transform: translate(-50%, -50%);
     }
-    
-    .arrow-bottom {
+      
+    .arrow-bottom  {
         width: 0;
         height: 0;
         border-left: 10px solid transparent;
@@ -40,22 +68,90 @@
         left: 140px;
         /* 箭头图标 */
     }
+
+    #cldFrame{
+    position: relative;
+    width: 440px;
+    margin: 50px auto;
+}
+#cldBody{
+    margin: 10px;
+    position: absolute;
+    width: 420px;
+}
+#top{
+    position: relative;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+#topDate{
+    font-size: 30px;
+}
+.curDate{
+    color: red;
+    font-weight: bold;
+}
+table{
+    background-color: #74cce9;
+}
+#week td{
+    font-size: 15px;
+}
+td{
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    font-family: Simsun;
+    font-size: 20px;
+}
+#left, #right{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+#left{left: 0px;}
+#right{right: 0px;}
+#left:hover, #right:hover{
+    background-color: rgba(30, 30, 30, 0.2);
+}
+.text {
+          color: white;
+          text-align: center;
+          text-transform: uppercase;
+          margin: 300px 0;
+          font-size: 22px;
+        }
     
+        @keyframes bganimation {
+          0% {
+            background-position: 0% 50%;
+          }
+    
+          50% {
+            background-position: 100% 50%;
+          }
+    
+          100% {
+            background-position: 0% 50%;
+          }
+        }
 </style>
 
-<body>
-    <!-- <audio autoplay="autoplay" loop="false" preload="auto" src="小匆匆 - 一生有你 (完整女版).mp3"> -->
-    <!-- </audio> -->
-    <!-- 背景音乐 -->
+<body onload="startTime()">
     <h1 align="center" style="color: #f7a2d0;font-family: 'Courier New', Courier, monospace;">欢迎来到夏的专属网站 </h1>
     <div id="meun" style="background-color:#ffb0e5;height:400px;width:300px;float:left;position: absolute;top: 100px;left: 50px;">
-        <h1 align="center" style="color: #66d2fd;font-family: 'Courier New', Courier, monospace;font-size:large;">点听歌</h1><br />
+        <h1 align="center" style="color: #66d2fd;font-family: 'Courier New', Courier, monospace;font-size:large;"></h1><br />
         <p class="arrow-bottom"></p>
-        <a href="小匆匆 - 一生有你 (完整女版).mp3" target="_self"><img src="https://img.51miz.com/Element/00/22/02/77/7f64b1c1_E220277_4ba3a81b.png" width=50 id="music"></a>
+        <a href="" target="_self"><img src="https://img.51miz.com/Element/00/22/02/77/7f64b1c1_E220277_4ba3a81b.png" width=50 id="music"></a>
+        <center
+    <h2>点击增加小红心</h2>
+    
     </div>
     <!-- 第一个面板 -->
+
     <div id="meun" style="background-color:#a7e4ce;height:400px;width:300px;float:left;position: absolute;top: 100px;left: 400px;">
-        <BODY bgcolor="#fef4d2" background="../images/background8.jpg" >
+        <BODY bgcolor="#fef4d2"  >
             <br>
             <br>
             <center>
@@ -69,6 +165,7 @@
                <font face="Helvetica" >
                  <form>
                    <select name=list>
+                    <!-- 每日更新链接 -->
                       <option value=http://ws.stream.qqmusic.qq.com/C400003kCV3W0xHFrC.m4a?guid=652128331&vkey=807C99A5719913EEEE1916AE9A9EF7FD178212872708382D9A2B96C4898E3454045A791F094C519D35C718F53821F195F6686568B285E506&uin=&fromtag=120002>夏天的风
                       <option value=http://ws.stream.qqmusic.qq.com/C40000361xcu0Lk4uU.m4a?guid=804385082&vkey=BDBE43E8B1518F67BF4A9F232A26761C995F70B03937982DCAE3AB3D6C47C1A1632AAEE858BD4037FD20C821FC1A3FFBCAFD57F098B7E578&uin=&fromtag=120002>stay with me
                       <option value=http://ws.stream.qqmusic.qq.com/C400003pegPO0hIkay.m4a?guid=695469619&vkey=17C3E6BA224D1486D3B726B766979938A3F80C5428E27591A93DE59A0E2B65CE30C77617E7D90CA47C71AF9A6D349BB922EB0F4FE6458F14&uin=&fromtag=120002>氢化氧
@@ -82,64 +179,166 @@
                  </form>
                </font> 
               <p></p>
-              
-
-    </div>
-    
+    </div>   
     <!-- 第二个面板 -->
+
     <div id="meun" style="background-color:#ccfc6c;height:400px;width:300px;float:left;position: absolute;top: 100px;left: 750px;">
-        <h2>游戏篇--测试点击速度</h2>
-        <hr width=300>
-        <script language=JavaScript>
-            // <!-- [Step1]: 这里可以更改多选框的个数 -->
-            var number = 8
-            var TotNum = 0
-            var index = false
-
-            function StartGame(form) {
-                TotNum = 0
-                index = false
-                for (var i = 1; i <= 64; ++i) {
-                    form.elements[i].checked = false
-                }
-            }
-
-            function TestSpeed(element) {
-                var now = new Date()
-                if (!index) {
-                    index = true
-                    startTime = now.getTime()
-                }
-                // <!-- [Step2]: 在此能够设置定时的时间 -->
-                if (now.getTime() - startTime > 10000) {
-                    element.checked = !element.checked
-                    return window.alert("测试时间已到！")
-                }
-                if (element.checked) TotNum++
-                    else TotNum--
-                        element.form.num.value = TotNum
-            }
-        </script>
-        <script language=JavaScript>
-            document.write("<form>")
-            document.write('已经选中：<input type="text" value="0" ');
-            document.write('name="num" size=2 onfocus="this.blur()"><br>')
-            document.write("<hr size=1 width=200>")
-            for (var i = 0; i < number; ++i) {
-                for (var j = 0; j < number; ++j) {
-                    document.write('<input type="checkbox" ');
-                    document.write('onclick="TestSpeed(this)">')
-                }
-                document.write("<br>")
-            }
-            document.write("<hr size=1 width=200>")
-            document.write('<input type="button" value="重新开始" ');
-            document.write('onclick="StartGame(this.form)">')
-            document.write("</form>")
-        </script>
+       
+       <font color="#33FFFF"><span id="nowDateTimeSpan"></span></font>
     </div>
     <!-- 第三个面板 -->
 
-</body>
+   
 
+    <div id="meun" style="height:400px;width:300px;float:left;position: absolute;top: 550px;left: 0px;">
+        <div id="cldFrame">
+            <div id="cldBody">
+                <table>
+                    <thead>
+                        <tr>
+                            <td colspan="7">
+                                <div id="top">
+                                    <span id="left">&lt;</span>
+                                    <span id="topDate"></span>
+                                    <span id="right">&gt;</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="week">
+                            <td>日</td>
+                            <td>一</td>
+                            <td>二</td>
+                            <td>三</td>
+                            <td>四</td>
+                            <td>五</td>
+                            <td>六</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>>
+    
+   
+    
+    
+</body>
+<script>
+    function isLeap(year) {
+    if((year%4==0 && year%100!=0) || year%400==0){
+        return true;
+    }
+    else{
+        return false; 
+    }
+}
+var monthDay = [31,0,31,30,31,30,31,31,30,31,30,31];
+function whatDay(year, month, day=1) {
+    var sum = 0;
+    sum += (year-1)*365+Math.floor((year-1)/4)-Math.floor((year-1)/100)+Math.floor((year-1)/400)+day;
+    for(var i=0; i<month-1; i++){
+        sum += monthDay[i];
+    }
+    if(month > 2){
+        if(isLeap(year)){ 
+            sum += 29; 
+        }
+        else{
+             sum += 28; 
+        }
+    }
+    return sum%7;      //余数为0代表那天是周日，为1代表是周一，以此类推
+}
+function showCld(year, month, firstDay){
+    var i;
+    var tagClass = "";
+    var nowDate = new Date();
+    
+    var days;//从数组里取出该月的天数
+    if(month == 2){
+        if(isLeap(year)){
+            days = 29;
+        }
+        else{
+            days = 28;
+        }
+    }
+    else{
+        days = monthDay[month-1];
+    }
+
+    /*当前显示月份添加至顶部*/
+    var topdateHtml = year + "年" + month + "月";
+    var topDate = document.getElementById('topDate');
+    topDate.innerHTML = topdateHtml;    
+    
+    /*添加日期部分*/
+    var tbodyHtml = '<tr>';
+    for(i=0; i<firstDay; i++){//对1号前空白格的填充
+        tbodyHtml += "<td></td>";
+    }
+    var changLine = firstDay;
+    for(i=1; i<=days; i++){//每一个日期的填充
+        if(year == nowDate.getFullYear() && month == nowDate.getMonth()+1 && i == nowDate.getDate()) {
+            tagClass = "curDate";//当前日期对应格子
+        } 
+        else{ 
+            tagClass = "isDate";//普通日期对应格子，设置class便于与空白格子区分开来
+        }  
+        tbodyHtml += "<td class=" + tagClass + ">" + i + "</td>";
+        changLine = (changLine+1)%7;
+        if(changLine == 0 && i != days){//是否换行填充的判断
+            tbodyHtml += "</tr><tr>";
+        } 
+    }
+    if(changLine!=0){//添加结束，对该行剩余位置的空白填充
+        for (i=changLine; i<7; i++) {
+            tbodyHtml += "<td></td>";
+        }
+    }//实际上不需要填充后方，但强迫症必须整整齐齐！   
+    tbodyHtml +="</tr>";
+    var tbody = document.getElementById('tbody');
+    tbody.innerHTML = tbodyHtml;
+}
+var curDate = new Date();
+    var curYear = curDate.getFullYear();
+    var curMonth = curDate.getMonth() + 1;
+    showCld(curYear,curMonth,whatDay(curYear,curMonth));
+    function nextMonth(){
+    var topStr = document.getElementById("topDate").innerHTML;
+    var pattern = /\d+/g;
+    var listTemp = topStr.match(pattern);
+    var year = Number(listTemp[0]);
+    var month = Number(listTemp[1]);
+    var nextMonth = month+1;
+    if(nextMonth > 12){
+        nextMonth = 1;
+        year++;
+    }
+    document.getElementById('topDate').innerHTML = '';
+    showCld(year, nextMonth, whatDay(year, nextMonth));
+}
+function preMonth(){
+    var topStr = document.getElementById("topDate").innerHTML;
+    var pattern = /\d+/g;
+    var listTemp = topStr.match(pattern);
+    var year = Number(listTemp[0]);
+    var month = Number(listTemp[1]);
+    var preMonth = month-1;
+    if(preMonth < 1){
+        preMonth = 12;
+        year--;
+    }
+    document.getElementById('topDate').innerHTML = '';
+    showCld(year, preMonth, whatDay(year, preMonth));
+}
+document.getElementById('right').onclick = function(){
+        nextMonth();
+    }
+    document.getElementById('left').onclick = function(){
+        preMonth();
+    }
+    </script>
 </html>
